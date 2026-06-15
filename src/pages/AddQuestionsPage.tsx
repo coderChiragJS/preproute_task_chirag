@@ -510,7 +510,7 @@ export default function AddQuestionsPage() {
                   onChange={e => setForm(f => ({ ...f, difficulty: e.target.value }))}
                   className="inp" style={{ paddingRight: 36, appearance: 'none' }}
                 >
-                  <option value="">Select from Drop-down</option>
+                  <option value="">Select difficulty</option>
                   <option value="easy">Easy</option>
                   <option value="medium">Medium</option>
                   <option value="hard">Hard</option>
@@ -526,7 +526,7 @@ export default function AddQuestionsPage() {
                   onChange={e => setForm(f => ({ ...f, topic_id: e.target.value }))}
                   className="inp" style={{ paddingRight: 36, appearance: 'none' }}
                 >
-                  <option value="">Select from Drop-down</option>
+                  <option value="">Select topic</option>
                   {topics.map(t => <option key={t.id} value={t.id}>{t.name}</option>)}
                 </select>
                 <ChevronDown size={14} style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', color: '#9CA3AF', pointerEvents: 'none' }} />
@@ -540,7 +540,7 @@ export default function AddQuestionsPage() {
                   onChange={e => setForm(f => ({ ...f, sub_topic_id: e.target.value }))}
                   className="inp" style={{ paddingRight: 36, appearance: 'none' }}
                 >
-                  <option value="">Select from Drop-down</option>
+                  <option value="">Select sub-topic</option>
                   {subTopics.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
                 </select>
                 <ChevronDown size={14} style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', color: '#9CA3AF', pointerEvents: 'none' }} />

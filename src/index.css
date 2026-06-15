@@ -41,6 +41,7 @@ body {
 .inp:disabled { background: #F9FAFB; color: #9CA3AF; cursor: not-allowed; }
 
 select.inp { cursor: pointer; }
+select.inp:has(option[value=""]:checked) { color: #9CA3AF; }
 
 /* ─── Buttons ─────────────────────────────────── */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; font-size: 14px; font-weight: 500; padding: 10px 20px; border-radius: 8px; border: none; cursor: pointer; transition: all 0.15s; white-space: nowrap; font-family: inherit; }

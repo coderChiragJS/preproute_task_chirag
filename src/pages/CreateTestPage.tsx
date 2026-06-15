@@ -246,7 +246,7 @@ export default function CreateTestPage() {
                       })}
                       className="inp" style={{ paddingRight: 36, appearance: 'none' }}
                     >
-                      <option value="">Choose from Drop-down</option>
+                      <option value="">Select subject</option>
                       {subjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
                     </select>
                     <ChevronDown size={14} style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', color: '#9CA3AF', pointerEvents: 'none' }} />
@@ -270,7 +270,7 @@ export default function CreateTestPage() {
                       })}
                       className="inp" style={{ paddingRight: 36, appearance: 'none' }} disabled={!selectedSubject}
                     >
-                      <option value="">Choose from Drop-down</option>
+                      <option value="">Select topic</option>
                       {topics.map(t => <option key={t.id} value={t.id}>{t.name}</option>)}
                     </select>
                     <ChevronDown size={14} style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', color: '#9CA3AF', pointerEvents: 'none' }} />
@@ -281,7 +281,7 @@ export default function CreateTestPage() {
                   <label className="lbl">Sub Topic</label>
                   <div style={{ position: 'relative' }}>
                     <select {...register('sub_topic')} className="inp" style={{ paddingRight: 36, appearance: 'none' }} disabled={!selectedTopic}>
-                      <option value="">Choose from Drop-down</option>
+                      <option value="">Select sub topic</option>
                       {subTopics.map(st => <option key={st.id} value={st.id}>{st.name}</option>)}
                     </select>
                     <ChevronDown size={14} style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', color: '#9CA3AF', pointerEvents: 'none' }} />
